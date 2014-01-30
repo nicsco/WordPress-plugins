@@ -19,7 +19,7 @@ function login_button_init() {
 		add_action( 'wp_footer', function(){ echo '<div id="login_button" onclick="location.href=\'' . wp_login_url() . '\';"></div>'; } );
 	}
 
-	wp_enqueue_style( 'login-button', WP_PLUGIN_URL . '/login-button/login-button.min.css', false, '2', 'all' );
+	wp_enqueue_style( 'login-button', WP_PLUGIN_URL . '/login-button/login-button.css', false, '2', 'all' );
 
 }
 

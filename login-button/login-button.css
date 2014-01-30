@@ -16,3 +16,7 @@ filter:Alpha(Opacity=100);
 opacity:1;
 }
 }
+@media(max-width:767px){
+#login_button{
+display:none;}
+}
