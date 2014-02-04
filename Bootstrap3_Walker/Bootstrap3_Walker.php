@@ -1,3 +1,5 @@
+<?php
+
 class Bootstrap3_Walker extends Walker {
 
 	#	http://core.trac.wordpress.org/browser/tags/3.3.2/wp-includes/nav-menu-template.php
@@ -91,8 +93,8 @@ class Bootstrap3_Walker extends Walker {
 			reset( $children_elements[$id] );
 
 			$element->classes[] = 'parent';
-			$cb_args = array_merge( array(&$output, $element, $depth), $args);
-			call_user_func_array(array(&$this, 'start_el'), $cb_args);
+			$cb_args = array_merge( array( &$output, $element, $depth ), $args );
+			call_user_func_array( array( &$this, 'start_el' ), $cb_args );
 
 			$this->start_lvl( &$output, $depth );
 
@@ -109,12 +111,12 @@ class Bootstrap3_Walker extends Walker {
 				$element->classes[] = 'first';
 				$this->first = TRUE;
 			}
-			$cb_args = array_merge( array(&$output, $element, $depth), $args);
-			call_user_func_array(array(&$this, 'start_el'), $cb_args);
+			$cb_args = array_merge( array( &$output, $element, $depth ), $args );
+			call_user_func_array( array( &$this, 'start_el' ), $cb_args );
 		}
 
-		$cb_args = array_merge( array(&$output, $element, $depth), $args);
-		call_user_func_array(array(&$this, 'end_el'), $cb_args);
+		$cb_args = array_merge( array( &$output, $element, $depth ), $args );
+		call_user_func_array( array( &$this, 'end_el' ), $cb_args );
 
 	}
 
