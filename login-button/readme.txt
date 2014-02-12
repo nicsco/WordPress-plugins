@@ -12,6 +12,31 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Put an hidden login button on the top-right page on front end. The button is shown only when mouse goes over it. In front-end, admin bar is hidden.
 
 
+
+
+
+== Changelog ==
+
+= 20140212 =
+   + add edit post/page button (if user is allowed)
+   + add exit button
+   + add icon font set (4 icons: login, logout, edit, config)
+
+
+
+
+
+
+
+Still not WP repository ready.... below is the default template!
+
+
+
+
+
+
+
+
 == Description ==
 
 This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
