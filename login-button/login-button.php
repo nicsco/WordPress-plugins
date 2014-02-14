@@ -31,8 +31,7 @@ function login_button_init() {
 		add_action( 'wp_footer', 'lb_logged_in' );
 	}
 	else {
-		add_action( 'wp_footer', 'lb_not_logged_in' );
-		add_action( 'wp_footer', function(){ echo '<div id="login_button"><i class="lb-icon-login" onclick="location.href=\'' . wp_login_url() . '\';"></i></div>'; } );
+		add_action( 'wp_footer', function(){ echo '<div id="login_button"><i class="lb-icon-cog" onclick="location.href=\'' . wp_login_url() . '\';"></i></div>'; } );
 	}
 
 	wp_enqueue_style( 'lb-style',	WP_PLUGIN_URL . '/login-button/css/login-button.css',	false, '2', 'all' );
